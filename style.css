@@ -1,0 +1,198 @@
+/* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
+
+/* Définition polices */
+
+body{
+  font-family: 'Indie Flower', cursive;
+}
+
+.amatic1, .amatic2, .amatic3{
+  font-family: 'Amatic SC', cursive;
+}
+
+
+/* définition taille des polices selon niveau */
+
+.amatic1{
+  font-size: 5em;
+  text-decoration: underline;
+}
+
+.amatic2{
+  font-size: 4em;
+  color: #FF5A09;
+  text-decoration: underline;
+  padding: 40px;
+}
+
+.amatic3{
+  font-size: 2em;
+}
+
+.indie1{
+  font-size: 2em;
+}
+
+/* style de body */ 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.bluehour{
+  background: -webkit-linear-gradient(left, #7E898F 0%, #636C75 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), -webkit-radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
+  background: linear-gradient(90deg, #7E898F 0%, #636C75 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.55) 100%), radial-gradient(at top, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.08) 63%);
+  background-blend-mode: multiply, screen; }
+
+p{
+  color: white;
+  font-size: 1.5em;
+}
+
+/* style du header */
+
+header{
+  text-align: center;
+  width:100%;
+  margin: 0;
+}
+
+#title{
+  background-color: #FF5A09;
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+  height: 150px;
+  width: inherit;
+}
+
+.far{
+  color: white;
+}
+
+nav ul li {
+ display: inline-block;
+ list-style: none;
+ padding:  20px 50px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
+  color: black;
+}
+
+
+/* mise en flex des éléments du conteneur performances */
+
+.container{
+  display: flex;
+}
+
+
+/* mise en en ligne et centrage des éléments de la liste */
+
+.item{
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 50px 20px;
+}
+
+h3{
+  color: white;
+  padding-bottom: 30px;
+}
+
+.imgperf{
+  max-width: 300px;
+  height: auto;
+  border-radius: 30px;
+  filter: drop-shadow(0 0 1rem #be4f0c);
+}
+
+.item p{
+  padding-top: 40px;
+}
+
+
+/* style de la partie about */
+
+.imgabout{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  max-width: 1000px;
+  filter: drop-shadow(0 0 1rem #be4f0c);
+  border-radius: 100px;
+}
+
+#about p{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  padding-bottom: 20px;
+}
+
+
+/* centrage du tableau des prix */
+
+.pricechart table{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 20px 0 80px 0;
+}
+
+
+/* style du tableau des prix */
+
+th{
+  color: black;
+  padding-bottom: 20px;
+  font-size: 2em;
+}
+
+td{
+  border: 1px solid #FF5A09;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+}
+
+
+/* style du formulaire de contact */
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5em;
+  padding: 20px 0 50px 0;
+}
+
+
+/* style du footer */
+footer p{
+  text-align:center;
+}
+
+footer a{
+  color: black;
+}
+
+footer a:hover{
+  color:#FF5A09; 
+}
