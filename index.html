@@ -1,6 +1,4 @@
-<!-- Afin de valider ton code HTML, fais un copier-coller de ce dernier et rends-toi sur https://validator.w3.org/#validate_by_input. 
-Click sur l'onglet "Validate by Direct Input" et colle ton code HTML, click ensuite sur le bouton "Check", et tu verras ensuite (si tu en as) les erreurs HTML s'afficher plus bas.
-Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.com/valider-vos-codes-html-et-css-sur-validator-w3-org/ -->
+<!-- Bonjour et bienvenue dans ma version du Wild Circus. Projet très sympa que j'ai pris beaucoup de plaisir à faire, j'espère que vous apprécierez le rendu final! Victorien -->
 
 <!DOCTYPE html>
 <html  lang="fr">
@@ -61,12 +59,12 @@ Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.co
     <section>
       <h2 class="amatic2">About Us</h2>
       <div id="about">
-        <iframe width="800 " height="450" src="https://www.youtube.com/embed/dW8xtH0DMGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/dW8xtH0DMGQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div class="about-text">
             <p> Even if we think that you know us, (yes, we love to travel and already performed our show to 24 different places in 11 countries!)  let’s talk a few about the magic we want to throw at your eyes :)</p>
             <p>Since 2014, our philosophy is to entertain people, so, but our first goal is to spread joy around the globe. Yes, we think we can change the world !</p>
             <p>Because "a day without laughter is a day wasted" as Charlie Chaplin said, and so we want to put a smile on your face for the next 2 hours when you enter the circus tent.</p>
-            <p>Here at Wild Circus, we also are a family. A great family of around 2,000 performers and ex-performers ! You can be a part of this family, and apply to learn with our enthusiast team in several countries in Europe.</p>
+            <p>Here at Wild Circus, we also are a family12. A great family of around 2,000 performers and ex-performers ! You can be a part of this family, and apply to learn with our enthusiast team in several countries in Europe.</p>
             <p>Last, don’t forget when the enter the tent: choose and put your most beautiful socks ! Yes, it’s scientifically proven, without shoes the joy spreads easier ;)</p>
           </div>
     </div>
@@ -81,7 +79,7 @@ Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.co
         <table>
           <thead>
             <tr>
-              <th></th>
+              <th colspan= "5"></th>
             </tr>
           </thead>
             <tr>
@@ -110,26 +108,29 @@ Tu peux jeter un oeil par ici pour en savoir un peu plus: https://www.243tech.co
     </section>
 
     <hr/>
+
+    <section>
     <h2 id="contact" class="amatic2">Contact Us</h2>
-    <section class="contact">
+    <div class="contact">
       <img src="https://media.lyon-france.com/1280x854/5375833/6988874.jpg" alt="troupe">
       <form>
         <div>
             <label for="name">Name :</label>
-            <input class="feedback-input" type="text" name="user_name">
+            <input id="name" class="feedback-input" type="text" name="user_name">
         </div>
         <div>
             <label for="mail">e-mail :</label>
-            <input class="feedback-input" type="email" name="user_mail">
+            <input id="mail" class="feedback-input" type="email" name="user_mail">
         </div>
         <div>
             <label for="msg">Message :</label>
-            <textarea class="feedback-input" type="message" name="user_message"></textarea>
+            <textarea id="msg" class="feedback-input" name="user_message"></textarea>
         </div>
         <div class="button">
             <button type="submit">Submit your Message</button>
         </div>
       </form>
+    </div>
     </section>
 
     <footer>

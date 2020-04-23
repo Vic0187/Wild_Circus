@@ -1,6 +1,6 @@
 /* Afin de valider ton code CSS, clic sur la petite flèche en haut à droite de cette fenêtre. Pour rappel, tu peux jeter un oeil par ici pour en savoir un peu plus: https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ */
 
-/* Définition polices */
+/* Définition des styles de base: polices, background, opacité */
 
 body{
   font-family: 'Indie Flower', cursive;
@@ -17,7 +17,7 @@ body{
 }
 
 
-/* définition taille des polices selon niveau */
+/* définition taille des polices selon niveau de titre & texte */
 
 .amatic1{
   font-size: 5em;
@@ -39,7 +39,13 @@ body{
   font-size: 2em;
 }
 
-/* style de body */ 
+p {
+  color:   color #272425;
+  font-size: 1.5em;
+}
+
+
+/* suppression des marges intrinsèques de body */ 
 
 * {
   box-sizing: border-box;
@@ -47,16 +53,15 @@ body{
   padding: 0;
 }
 
+
+/* mise en flexbox du conteneur global*/
+
 .fxcontainer{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-p {
-  color:   color #272425;
-  font-size: 1.5em;
-}
 
 /* style du header */
 
@@ -93,9 +98,13 @@ nav ul li a{
   color: #272425;
 }
 
+/* style des éléments de la liste au survol*/
+
 nav ul li a:hover{
   color: white;
 }
+
+/* application de filtre d'ombre extérieure à l'image, arrondissement des angles et définition largeur maxi */
 
 .imghead{
   padding: 3rem;
@@ -108,13 +117,14 @@ nav ul li a:hover{
   padding: 0 2rem 3rem;
 }
 
-/* mise en flex des éléments du conteneur performances */
+/* mise en flex des éléments du conteneur performances et définition largeur maxi */
 
 .container{
   max-width: 90%;
   margin: auto;
 }
 
+/* mise en flexbox du sous-conteneur performances et définition de la direction en ligne des éléments */
 
 .perfcontainer{
   display: flex;
@@ -122,6 +132,8 @@ nav ul li a:hover{
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+
+/* suppression des puces de la liste */
 
 .perfcontainer li{
   list-style: none;
@@ -145,6 +157,11 @@ h3{
   width: 100%;
   filter: drop-shadow(0 0 0.3em );
   border-radius: 10px;
+  filter: blur(5px)
+}
+
+.item img:hover{
+  filter: blur(0);
 }
 
 .item p{
@@ -153,7 +170,6 @@ h3{
 
 
 /* style de la partie about */
-
 
 #about{
   display: flex;
@@ -165,12 +181,14 @@ h3{
   max-width: 90%;
 }
 
+/* style de l'encart de la vidéo Youtube */
+
 iframe{
   filter: drop-shadow(0 0 0.3em );
   border-radius: 10px;
+  border: none;
   margin-bottom: 3rem;
 }
-
 
 #about p{
   padding: 0.5em ;
@@ -180,7 +198,7 @@ iframe{
   padding: 3rem 0;
 }
 
-/* centrage du tableau des prix */
+/* style du tableau des prix */
 
 .pricechart{
   display: flex;
@@ -195,7 +213,6 @@ iframe{
   filter: drop-shadow(0 0 0.3em );
   border-radius: 10px;
 }
-
 
 table{
   border-collapse: collapse;
@@ -212,6 +229,8 @@ td{
   overflow: hidden;
   width: 15rem;
 }
+
+/* suppression visuelle de la case vide du tableau */
 
 .tdnone {
   background-color:transparent;
@@ -239,6 +258,7 @@ form {
   margin: auto;
   font-size: 1.5em;
 }
+
 
 .feedback-input {
   font-family: Helvetica, Arial, sans-serif;
