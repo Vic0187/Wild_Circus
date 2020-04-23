@@ -4,12 +4,12 @@
 
 body{
   font-family: 'Indie Flower', cursive;
-  background-image: url(https://images.pexels.com/photos/122458/pexels-photo-122458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-size: 100%;
+  background-image: url(https://images.unsplash.com/photo-1533628635777-112b2239b1c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-size: auto;
 }
 
 #back-opacity{
-  background-color: rgba(255, 255, 255, 0.3)
+  background-color: rgba(255, 255, 255, 0.2)
 }
 
 .amatic1, .amatic2, .amatic3{
