@@ -4,7 +4,12 @@
 
 body{
   font-family: 'Indie Flower', cursive;
-  background-color: #e0ba73;
+  background-image: url(https://images.pexels.com/photos/122458/pexels-photo-122458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: 100%;
+}
+
+#back-opacity{
+  background-color: rgba(255, 255, 255, 0.3)
 }
 
 .amatic1, .amatic2, .amatic3{
@@ -192,10 +197,10 @@ table{
 }
 
 td{
-  background-color:#e5e5e5;
+  background-color:#e5e8e8;
   text-align: center;
   color: black;
-  border: 6px ridge;
+  border: 10px ridge slategray;
   font-size: 1.5em;
   overflow: hidden;
   width: 15rem;
@@ -220,7 +225,7 @@ form {
   font-size: 1.2rem;
   border-radius: 5px;
   line-height: 1.5rem;
-  background-color:#e5e5e5;
+  background-color:#e5e8e8;
   border:3px solid #272425;
   transition: all 0.3s;
   padding: 1rem;
@@ -269,8 +274,9 @@ footer {
 }
 
 footer a{
+  font-size: 1.5rem;
   color: black;
-  text-decoration: none;
+  text-decoration:;
 }
 
 footer a:hover{
